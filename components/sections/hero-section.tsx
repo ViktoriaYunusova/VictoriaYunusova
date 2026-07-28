@@ -81,12 +81,13 @@ export function HeroSection() {
               Смотреть опыт
             </a>
             <a
-              href="/resume_victoria_yunusova.pdf"
-              download="resume_victoria_yunusova.pdf"
+              href="https://drive.google.com/file/d/1v5t70uTHgsYC1xsOcbNn1jSTncRBr-J8/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-outline"
             >
               <Download size={16} />
-              Скачать резюме
+              Смотреть резюме
             </a>
           </motion.div>
         </motion.div>
