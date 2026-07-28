@@ -81,8 +81,8 @@ export function HeroSection() {
               Смотреть опыт
             </a>
             <a
-              href="/Резюме_Юнусова_Виктория.pdf"
-              download="Резюме_Юнусова_Виктория.pdf"
+              href="/resume_victoria_yunusova.pdf"
+              download="resume_victoria_yunusova.pdf"
               className="btn-outline"
             >
               <Download size={16} />
