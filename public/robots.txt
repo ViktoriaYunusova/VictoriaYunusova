@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://viktorina-yunusova.portfolio/sitemap.xml
