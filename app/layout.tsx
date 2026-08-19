@@ -27,16 +27,16 @@ const cormorant = Cormorant({
 export const metadata: Metadata = {
   metadataBase: new URL('https://viktorina-yunusova.portfolio'),
   title: {
-    default: 'Виктория Юнусова | Project Manager | Business Analyst | Product Manager',
+    default: 'Виктория Юнусова | Project Manager',
     template: '%s — Виктория Юнусова',
   },
-  description: 'Виктория Юнусова 2026 — специалист по управлению проектами, бизнес-анализу и продуктовому менеджменту. Опыт в снабжении, логистике, автоматизации процессов.',
-  keywords: ['Виктория Юнусова', 'Project Manager', 'Business Analyst', 'Product Manager', 'снабжение', 'логистика', 'цифровизация'],
+  description: 'Виктория Юнусова — специалист по управлению проектами. Опыт в управлении проектами, бизнес-анализе, снабжении и цифровизации бизнеса.',
+  keywords: ['Виктория Юнусова', 'Project Manager'],
   authors: [{ name: 'Виктория Юнусова' }],
   openGraph: {
     type: 'website',
     locale: 'ru_RU',
-    title: 'Виктория Юнусова | Project Manager | Business Analyst | Product Manager',
+    title: 'Виктория Юнусова | Project Manager',
     description: 'Персональное портфолио Виктории Юнусовой. Опыт в управлении проектами, бизнес-анализе, снабжении и цифровизации бизнеса.',
     images: [{ url: '/og-image.svg', width: 1200, height: 630 }],
   },
