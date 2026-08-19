@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Reset + base ── */
+@layer base {
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    background-color: #E6D4C2;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'cv11', 'ss01';
+    overflow-x: hidden;
+  }
+}
+
+/* ── Full-page scroll-snap container ── */
+.snap-container {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100svh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Utility classes ── */
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(20px) saturate(170%);
+    -webkit-backdrop-filter: blur(20px) saturate(170%);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 32px rgba(111,36,50,0.10), inset 0 1px 0 rgba(255,255,255,0.7);
+  }
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(28px) saturate(180%);
+    -webkit-backdrop-filter: blur(28px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.70);
+    box-shadow: 0 4px 24px rgba(111,36,50,0.09);
+  }
+  .card-base {
+    background: #FFFFFF;
+    border: 1px solid rgba(111,36,50,0.08);
+    border-radius: 24px;
+    box-shadow: 0 2px 20px rgba(111,36,50,0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-base:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(111,36,50,0.13);
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #6F2432;
+    color: #FFFFFF;
+    border-radius: 999px;
+    padding: 0.875rem 1.75rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: var(--font-manrope), system-ui, sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    box-shadow: 0 4px 20px rgba(111,36,50,0.25);
+  }
+  .btn-primary:hover {
+    background: #5a1d28;
+    transform: scale(1.025);
+    box-shadow: 0 8px 32px rgba(111,36,50,0.32);
+  }
+  .btn-primary:active { transform: scale(0.97); }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.6);
+    color: #6F2432;
+    border: 1.5px solid rgba(111,36,50,0.22);
+    border-radius: 999px;
+    padding: 0.875rem 1.75rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: var(--font-manrope), system-ui, sans-serif;
+    backdrop-filter: blur(8px);
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  }
+  .btn-outline:hover {
+    background: rgba(255,255,255,0.85);
+    border-color: rgba(111,36,50,0.45);
+    transform: scale(1.025);
+  }
+  .btn-outline:active { transform: scale(0.97); }
+}
+
+/* ── Scrollbar (fallback for non-snap) ── */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #E6D4C2; }
+::-webkit-scrollbar-thumb {
+  background: rgba(111,36,50,0.22);
+  border-radius: 999px;
+  border: 2px solid #E6D4C2;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(111,36,50,0.4); }
+
+/* ── Selection ── */
+::selection { background: rgba(111,36,50,0.18); color: #222; }
+
+/* ── Accent-colored cursor ── */
+@media (hover: hover) and (pointer: fine) {
+  body { cursor: auto; }
+  a, button, [role="button"], input[type="checkbox"], input[type="radio"], label, select, summary, [data-cursor="pointer"] {
+    cursor: pointer;
+  }
+}
