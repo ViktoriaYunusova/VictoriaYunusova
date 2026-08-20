@@ -81,9 +81,10 @@ export function HeroSection() {
               Смотреть опыт
             </a>
             <a
-              href="/resume_victoria_yunusova.pdf"
-              download="resume_victoria_yunusova.pdf"
-              className="btn-outline"
+               href="https://drive.google.com/drive/u/0/folders/1Tv3b9ZBVelNpHQnz_SX3s0dG6s3n7Nlk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline"
             >
               <Download size={16} />
               Скачать резюме
