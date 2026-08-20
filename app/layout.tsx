@@ -25,7 +25,7 @@ const cormorant = Cormorant({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://viktorina-yunusova.portfolio'),
+  metadataBase: new URL('https://victoria-yunusova.netlify.app'),
   title: {
     default: 'Виктория Юнусова | Project Manager',
     template: '%s — Виктория Юнусова',
