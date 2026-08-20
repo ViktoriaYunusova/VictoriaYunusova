@@ -81,7 +81,7 @@ export function HeroSection() {
               Смотреть опыт
             </a>
             <a
-               href="https://drive.google.com/drive/u/0/folders/1Tv3b9ZBVelNpHQnz_SX3s0dG6s3n7Nlk"
+               href="https://drive.google.com/file/d/1v5t70uTHgsYC1xsOcbNn1jSTncRBr-J8/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline"
